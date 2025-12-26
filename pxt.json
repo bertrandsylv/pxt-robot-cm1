@@ -1,5 +1,5 @@
 {
-    "name": "robot-cm1",
+    "name": "robot",
     "description": "",
     "dependencies": {
         "core": "*",
