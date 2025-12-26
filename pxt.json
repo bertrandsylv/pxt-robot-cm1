@@ -1,5 +1,5 @@
 {
-    "name": "pxt-robot-cm1",
+    "name": "robot-cm1",
     "description": "",
     "dependencies": {
         "core": "*",
