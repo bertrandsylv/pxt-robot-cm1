@@ -1,14 +1,14 @@
 namespace robot {
-export function vitesse_droite_lent () {
+export function vitesseDroiteLent () {
     maqueenPlusV2.controlMotor(maqueenPlusV2.MyEnumMotor.RightMotor, maqueenPlusV2.MyEnumDir.Forward, 30)
 }
-export function vitesse_droite_rapide () {
+export function vitesseDroiteRapide () {
     maqueenPlusV2.controlMotor(maqueenPlusV2.MyEnumMotor.RightMotor, maqueenPlusV2.MyEnumDir.Forward, 100)
 }
-export function vitesse_gauche_rapide () {
+export function vitesseGaucheRapide () {
     maqueenPlusV2.controlMotor(maqueenPlusV2.MyEnumMotor.LeftMotor, maqueenPlusV2.MyEnumDir.Forward, 100)
 }
-export function vitesse_gauche_lent () {
+export function vitesseGaucheLent () {
     maqueenPlusV2.controlMotor(maqueenPlusV2.MyEnumMotor.LeftMotor, maqueenPlusV2.MyEnumDir.Forward, 30)
 }
 }
