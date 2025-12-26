@@ -3,8 +3,6 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*",
         "maqueenPlusV2": "github:dfrobot/pxt-dfrobot_maqueenplus_v20#v2.2.29"
     },
     "files": [
@@ -16,7 +14,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "8.0.18",
+        "target": "8.0.15",
         "targetId": "microbit"
     },
     "supportedTargets": [
