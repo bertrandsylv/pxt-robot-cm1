@@ -1,9 +1,10 @@
 //% block="Robot CM1"
-//% weight=100 color=#5b3fe8"
+//% weight=100 color=#5b3fe8" color=#f44242 icon="\uf185"
 namespace robot {
 
 
 //% block="Roue droite vitesse lente"
+//%blockId="roue_droite_lent"
 //% weight=99
 export function vitesseDroiteLent () {
     maqueenPlusV2.controlMotor(maqueenPlusV2.MyEnumMotor.RightMotor, maqueenPlusV2.MyEnumDir.Forward, 30)
