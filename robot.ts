@@ -33,11 +33,10 @@ namespace robot {
 	}
 	
 	
-	
 	//% block="Arreter robot"
 	//% blockId="robot_arreter"
 	//% weight=95
-	export function arreter_robot () {
+	export function arreterRobot () {
 		maqueenPlusV2.controlMotorStop(maqueenPlusV2.MyEnumMotor.LeftMotor)
 		maqueenPlusV2.controlMotorStop(maqueenPlusV2.MyEnumMotor.RightMotor)
 	}
