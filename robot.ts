@@ -45,7 +45,7 @@ namespace robot {
 	
 	//% block="Initialiser robot"
 	//% blockId="robot_initialiser"
-	//% weight=94
+	//% weight=93
 	export function initialiserRobot(){
 		maqueenPlusV2.I2CInit()
 		basic.clearScreen()
