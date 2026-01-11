@@ -41,5 +41,16 @@ namespace robot {
 		maqueenPlusV2.controlMotorStop(maqueenPlusV2.MyEnumMotor.RightMotor)
 	}
 	
+	//% block="Avancer de |%distance cm"
+	//% blockId="robot_avancer"
+	//% weight=94
+	//% distance.defl=10
+	export function avancerRobot(distance:number){
+		maqueenPlusV2.pidControlDistance(maqueenPlusV2.SpeedDirection.SpeedCW, distance, maqueenPlusV2.MyInterruption.NotAllowed)
+		maqueenPlusV2.pidControlStop()
+	}
+	
+	
+
 
 }
