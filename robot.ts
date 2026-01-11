@@ -41,6 +41,23 @@ namespace robot {
 		maqueenPlusV2.controlMotorStop(maqueenPlusV2.MyEnumMotor.RightMotor)
 	}
 	
+	
+	
+	//% block="Initialiser robot"
+	//% blockId="robot_initialiser"
+	//% weight=94
+	export function initialiserRobot(){
+		maqueenPlusV2.I2CInit()
+		basic.clearScreen()
+		basic.showIcon(IconNames.Happy)
+		while (false) {
+			if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+				continue;
+			}
+		}
+	}
+	
+	
 	//% block="Avancer de |%distance cm"
 	//% blockId="robot_avancer"
 	//% weight=94
