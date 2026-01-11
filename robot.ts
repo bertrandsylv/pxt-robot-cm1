@@ -43,6 +43,16 @@ namespace robot {
 	
 	
 	
+
+	//% block="Avancer de |%distance cm"
+	//% blockId="robot_avancer"
+	//% weight=94
+	//% distance.defl=10
+	export function avancerRobot(distance:number){
+		maqueenPlusV2.pidControlDistance(maqueenPlusV2.SpeedDirection.SpeedCW, distance, maqueenPlusV2.MyInterruption.NotAllowed)
+		maqueenPlusV2.pidControlStop()
+	}
+	
 	//% block="Initialiser robot"
 	//% blockId="robot_initialiser"
 	//% weight=93
@@ -56,18 +66,7 @@ namespace robot {
 			}
 		}
 	}
-	
-	
-	//% block="Avancer de |%distance cm"
-	//% blockId="robot_avancer"
-	//% weight=94
-	//% distance.defl=10
-	export function avancerRobot(distance:number){
-		maqueenPlusV2.pidControlDistance(maqueenPlusV2.SpeedDirection.SpeedCW, distance, maqueenPlusV2.MyInterruption.NotAllowed)
-		maqueenPlusV2.pidControlStop()
-	}
-	
-	
+		
 
 
 }
