@@ -60,7 +60,7 @@ namespace robot {
 		maqueenPlusV2.I2CInit()
 		basic.clearScreen()
 		basic.showIcon(IconNames.Happy)
-		while (false) {
+		while (true) {
 			if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
 				continue;
 			}
