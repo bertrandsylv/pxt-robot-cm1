@@ -62,7 +62,7 @@ namespace robot {
 		basic.showIcon(IconNames.Happy)
 		while (true) {
 			if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
-				continue;
+				break;
 			}
 		}
 	}
