@@ -66,7 +66,24 @@ namespace robot {
 			}
 		}
 	}
+	
+	
+	
+	//% block="Tourner gauche"
+	//% blockId="robot_tourner_gauche"
+	//% weight=92
+	export function tournerGaucheRobot(){
+		maqueenPlusV2.pidControlAngle(90, maqueenPlusV2.MyInterruption.NotAllowed)
+		maqueenPlusV2.pidControlStop()
+	}
 		
 
+	//% block="Tourner droite"
+	//% blockId="robot_tourner_droite"
+	//% weight=92
+	export function tournerDroiteRobot(){
+		maqueenPlusV2.pidControlAngle(-90, maqueenPlusV2.MyInterruption.NotAllowed)
+		maqueenPlusV2.pidControlStop()
+	}
 
 }
