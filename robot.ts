@@ -9,12 +9,8 @@ namespace robot {
 		maqueenPlusV2.I2CInit()
 		basic.clearScreen()
 		basic.showIcon(IconNames.Happy)
-		while (true) {
-			if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
-				break; 
-			}
-		}
 	}
+	
 	
 	//% block="Avancer de |%distance cm"
 	//% blockId="robot_avancer"
@@ -30,7 +26,7 @@ namespace robot {
 	//% blockId="robot_tourner_gauche"
 	//% weight=97
 	export function tournerGaucheRobot(){
-		maqueenPlusV2.pidControlAngle(90, maqueenPlusV2.MyInterruption.NotAllowed)
+		maqueenPlusV2.pidControlAngle(-90, maqueenPlusV2.MyInterruption.NotAllowed)
 		maqueenPlusV2.pidControlStop()
 	}
 	
@@ -39,7 +35,7 @@ namespace robot {
 	//% blockId="robot_tourner_droite"
 	//% weight=96
 	export function tournerDroiteRobot(){
-		maqueenPlusV2.pidControlAngle(-90, maqueenPlusV2.MyInterruption.NotAllowed)
+		maqueenPlusV2.pidControlAngle(90, maqueenPlusV2.MyInterruption.NotAllowed)
 		maqueenPlusV2.pidControlStop()
 	}
 
@@ -53,6 +49,17 @@ namespace robot {
 		maqueenPlusV2.controlMotorStop(maqueenPlusV2.MyEnumMotor.RightMotor)
 	}
 	
+
+	//% block="Attendre appui bouton"
+	//% blockId="attendre_appui_bouton"
+	//% weight=94
+	export function attendreAppuiBouton () {
+		while (true) {
+			if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+				break; 
+			}
+		}
+	}
 
 
 	//% block="Faire tourner roue droite lentement"
