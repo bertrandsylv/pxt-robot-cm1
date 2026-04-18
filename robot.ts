@@ -60,16 +60,17 @@ namespace robot {
 			}
 		}
 	}
+	
+	
 
-
-	//% block="Faire tourner roue droite lentement"
+	//% block="Avancer roue droite lentement"
 	//% blockId="robot_roue_droite_lent"
 	//% weight=79
 	export function vitesseDroiteLent () {
 		maqueenPlusV2.controlMotor(maqueenPlusV2.MyEnumMotor.RightMotor, maqueenPlusV2.MyEnumDir.Forward, 30)
 	}
 
-	//% block="Faire tourner roue droite rapidement"
+	//% block="Avancer roue droite rapidement"
 	//% blockId="robot_roue_droite_rapide"
 	//% weight=78
 	export function vitesseDroiteRapide () {
@@ -77,7 +78,7 @@ namespace robot {
 	}
 
 
-	//% block="Faire tourner roue gauche lentement"
+	//% block="Avancer roue gauche lentement"
 	//% blockId="robot_roue_gauche_lent"
 	//% weight=77
 	export function vitesseGaucheLent () {
@@ -85,7 +86,7 @@ namespace robot {
 	}
 
 
-	//% block="Faire tourner roue gauche rapidement"
+	//% block="Avancer roue gauche rapidement"
 	//% blockId="robot_roue_gauche_rapide"
 	//% weight=76
 	export function vitesseGaucheRapide () {
